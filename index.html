@@ -18,6 +18,21 @@
   <title>Lumière</title>
 </head>
 <body>
-  <script src="flutter_bootstrap.js" async></script>
+  <script>
+    (async () => {
+      if ('serviceWorker' in navigator) {
+        const registrations = await navigator.serviceWorker.getRegistrations();
+        await Promise.all(registrations.map((registration) => registration.unregister()));
+      }
+      if ('caches' in window) {
+        const names = await caches.keys();
+        await Promise.all(names.map((name) => caches.delete(name)));
+      }
+      const runtime = document.createElement('script');
+      runtime.src = 'flutter_bootstrap.js?v=LUX2-20260926.1';
+      runtime.async = true;
+      document.body.appendChild(runtime);
+    })();
+  </script>
 </body>
 </html>
