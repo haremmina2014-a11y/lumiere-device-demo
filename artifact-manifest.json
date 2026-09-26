@@ -1,7 +1,7 @@
 {
-  "build": "LUX2-20260926.1",
+  "build": "WCQ-20260926.1",
   "channel": "device-demo",
-  "scope": "full-product-luxury-polish-milestone",
+  "scope": "world-class-quality-pass",
   "source": "compiled-artifacts-only",
   "providerMode": "fixture-only",
   "perfectCorpEnabled": false,
