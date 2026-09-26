@@ -1,0 +1,70 @@
+{
+  "build": "LP2A-20260926.1",
+  "artifacts": [
+    {
+      "file": ".nojekyll",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "assets/app.b10b6313a664.css",
+      "bytes": 21022,
+      "sha256": "b10b6313a664f6f8fe232b2fbc4bb51b39ddeb6187c9f9107cf10b386455bc2b"
+    },
+    {
+      "file": "assets/app.babbed3e7cd9.js",
+      "bytes": 10338,
+      "sha256": "babbed3e7cd9445ae904bd9a7e8876bfd7125be965150de750fe4f421c2f6ef6"
+    },
+    {
+      "file": "assets/cache-reset.312fe609ad29.js",
+      "bytes": 288,
+      "sha256": "312fe609ad294ff779279d9859390b53100a14bfd26b5ba059328222d87d86fb"
+    },
+    {
+      "file": "assets/fonts/arabic.ttf",
+      "bytes": 307592,
+      "sha256": "67b5a525a661b607971fbd3f96a81b89d3a768e74534fca84f18ac97e6fab72f"
+    },
+    {
+      "file": "assets/fonts/editorial.ttf",
+      "bytes": 1195560,
+      "sha256": "b20b7d9626dd956b2c5e558692ad328b1f19e3275e2782db4fa07670d83f35e0"
+    },
+    {
+      "file": "assets/fonts/sans.ttf",
+      "bytes": 165420,
+      "sha256": "d0639be45d0af36e798172419d7bd173c4bd4f29e2b76cbb69db1d11bf8b0a40"
+    },
+    {
+      "file": "assets/hair-editorial.jpg",
+      "bytes": 229342,
+      "sha256": "d23880dc99cfa54c2e3b343f31de06210a63e3940dfcf61c10bebd94b07bdc23"
+    },
+    {
+      "file": "assets/nails-editorial.jpg",
+      "bytes": 214331,
+      "sha256": "84b1c59aed52415c1915f0f361f2776124564383ee01c4eb2387a92c4cc48e05"
+    },
+    {
+      "file": "assets/portrait-editorial.jpg",
+      "bytes": 127373,
+      "sha256": "3c7e990bf05f8fb78d2afdbee8016c298d330823a44e2b53b88e9716f5df5802"
+    },
+    {
+      "file": "flutter_service_worker.js",
+      "bytes": 368,
+      "sha256": "a43f2820d2011407ca06b4d2e4bedcd6582d5a0ada87776970771c437d20d2ac"
+    },
+    {
+      "file": "index.html",
+      "bytes": 18499,
+      "sha256": "199a0e0ccfb287887cb83ac39f894602b161e984f05b9e2c14e5f85b337e1b58"
+    },
+    {
+      "file": "version.json",
+      "bytes": 241,
+      "sha256": "b3922331e3819084096f0a48a5186fae13e4bebf3f0249254eb5b714ca44c89d"
+    }
+  ]
+}

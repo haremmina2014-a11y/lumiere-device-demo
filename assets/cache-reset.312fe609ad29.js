@@ -1,0 +1,1 @@
+if ('serviceWorker' in navigator) { navigator.serviceWorker.getRegistrations().then(items => Promise.all(items.map(item => item.unregister()))).catch(() => {}); } if ('caches' in globalThis) { caches.keys().then(keys => Promise.all(keys.map(key => caches.delete(key)))).catch(() => {}); }
