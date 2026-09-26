@@ -1,13 +1,14 @@
 {
-  "build": "WCQ-20260926.1",
+  "build": "PC-20260927.1",
   "channel": "device-demo",
-  "scope": "world-class-quality-pass",
+  "scope": "product-completion",
   "source": "compiled-artifacts-only",
   "providerMode": "fixture-only",
   "perfectCorpEnabled": false,
   "privacyGate": "closed",
   "providerRequests": 0,
   "trialUnits": 0,
+  "realPurchases": false,
   "cachePolicy": "legacy-service-workers-unregistered",
-  "generatedAt": "2026-09-26T00:00:00Z"
+  "generatedAt": "2026-09-27T00:00:00Z"
 }
