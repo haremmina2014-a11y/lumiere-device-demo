@@ -1,5 +1,5 @@
 {
-  "build": "LP2A-20260926.1",
+  "build": "LP2A-20260926.2",
   "artifacts": [
     {
       "file": ".nojekyll",
@@ -7,14 +7,14 @@
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
-      "file": "assets/app.b10b6313a664.css",
-      "bytes": 21022,
-      "sha256": "b10b6313a664f6f8fe232b2fbc4bb51b39ddeb6187c9f9107cf10b386455bc2b"
+      "file": "assets/app.69b43a1bf383.css",
+      "bytes": 32981,
+      "sha256": "69b43a1bf3835e9968e06824c6b79b42150b9419f693b5bb218222c378d17850"
     },
     {
-      "file": "assets/app.babbed3e7cd9.js",
-      "bytes": 10338,
-      "sha256": "babbed3e7cd9445ae904bd9a7e8876bfd7125be965150de750fe4f421c2f6ef6"
+      "file": "assets/app.813b5de45bd7.js",
+      "bytes": 29527,
+      "sha256": "813b5de45bd74d3ac72f072a07de482decf4f7f08ae4a2ee9e6c39a6d8b9c1cc"
     },
     {
       "file": "assets/cache-reset.312fe609ad29.js",
@@ -58,13 +58,13 @@
     },
     {
       "file": "index.html",
-      "bytes": 18499,
-      "sha256": "199a0e0ccfb287887cb83ac39f894602b161e984f05b9e2c14e5f85b337e1b58"
+      "bytes": 20318,
+      "sha256": "d113e7de7ce3fe5bedb560aef94f2c404ffe218761a82995e2ad3fcbf391d692"
     },
     {
       "file": "version.json",
       "bytes": 241,
-      "sha256": "b3922331e3819084096f0a48a5186fae13e4bebf3f0249254eb5b714ca44c89d"
+      "sha256": "c87638a9065032530f614ff2eb5cc957979842485c3e95c52ffd2cc9feedcdae"
     }
   ]
 }

@@ -10,11 +10,11 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="apple-mobile-web-app-title" content="Lumière" />
-    <meta name="lumiere-build" content="LP2A-20260926.1" />
+    <meta name="lumiere-build" content="LP2A-20260926.2" />
     <meta http-equiv="Content-Security-Policy" content="default-src 'none'; base-uri 'self'; connect-src 'none'; font-src 'self'; form-action 'none'; frame-src 'none'; img-src 'self' data:; object-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; worker-src 'none'" />
     <meta name="color-scheme" content="light dark" />
     <title>Lumière — Luxury Polish 2A</title>
-    <link rel="stylesheet" href="assets/app.b10b6313a664.css" />
+    <link rel="stylesheet" href="assets/app.69b43a1bf383.css" />
   </head>
   <body>
     <div class="review-bar" aria-label="Prototype controls">
@@ -26,7 +26,17 @@
         <button class="review-button" type="button" data-jump="welcome">Welcome</button>
         <button class="review-button" type="button" data-jump="today">Today</button>
         <button class="review-button" type="button" data-jump="reveal">Result reveal</button>
-        <button class="review-button locale-toggle" type="button" aria-label="Switch language">العربية</button>
+        <label class="locale-control">
+          <span class="sr-only">Language</span>
+          <select class="locale-select" aria-label="Language">
+            <option value="en">English</option>
+            <option value="no">Norsk</option>
+            <option value="de">Deutsch</option>
+            <option value="fr">Français</option>
+            <option value="es">Español</option>
+            <option value="ar">العربية</option>
+          </select>
+        </label>
       </div>
     </div>
 
@@ -51,18 +61,20 @@
             <span data-i18n="privacy">Privacy before beauty</span>
           </button>
         </div>
-        <p class="prototype-label prototype-label--dark" data-i18n="imageLabel">Phase 2A · LP2A-20260926.1</p>
+        <p class="prototype-label prototype-label--dark" data-i18n="imageLabel">LP2A-20260926.2</p>
       </section>
 
       <section class="screen screen--today" data-screen="today" aria-labelledby="today-title">
         <header class="topbar">
-          <button class="avatar" type="button" data-toast-key="profile" aria-label="Open profile">
-            <img src="assets/portrait-editorial.jpg" alt="" />
-          </button>
           <div class="wordmark" aria-label="Lumière">Lumière</div>
-          <button class="icon-button" type="button" data-toast-key="notifications" aria-label="Notifications">
-            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M18 9a6 6 0 0 0-12 0c0 7-3 7-3 7h18s-3 0-3-7M10 20h4" /></svg>
-          </button>
+          <div class="topbar-tools">
+            <button class="icon-button notification-button" type="button" data-toast-key="notifications" aria-label="Notifications" data-i18n-aria="notificationsAria">
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M18 9a6 6 0 0 0-12 0c0 7-3 7-3 7h18s-3 0-3-7M10 20h4" /></svg>
+            </button>
+            <button class="avatar" type="button" data-toast-key="profile" aria-label="Open profile" data-i18n-aria="profileAria">
+              <img src="assets/portrait-editorial.jpg" alt="" />
+            </button>
+          </div>
         </header>
 
         <div class="today-scroll">
@@ -83,78 +95,54 @@
                 <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h13M14 7l5 5-5 5" /></svg>
               </button>
             </div>
-            <span class="fixture-badge" data-i18n="fixture">Demo context</span>
           </article>
 
-          <section class="chapter chapter--precision" aria-labelledby="precision-title">
-            <div class="chapter-heading">
-              <div>
-                <p class="micro-label" data-i18n="latestSkin">Latest Skin preview</p>
-                <h2 id="precision-title" data-i18n="calmPicture">A calm, balanced picture.</h2>
-              </div>
-              <span class="date-chip">18 Sep</span>
+          <section class="precision-thread" aria-labelledby="precision-title">
+            <span class="precision-thread__orb" aria-hidden="true"><span></span></span>
+            <div>
+              <p class="micro-label"><span data-i18n="latestSkin">Latest Skin result</span> · 18 Sep</p>
+              <h2 id="precision-title" data-i18n="calmPicture">A calm, balanced picture.</h2>
+              <p data-i18n="understandFocus">See what matters and what to do next.</p>
             </div>
-            <p class="chapter-copy" data-i18n="precisionContext">Your illustrative result is ready to explore. No live provider was contacted.</p>
-            <button class="result-entry" type="button" data-next="reveal">
-              <span class="result-entry__orb" aria-hidden="true">
-                <span></span>
-              </span>
-              <span class="result-entry__text">
-                <strong data-i18n="viewResult">View Precision result</strong>
-                <small data-i18n="understandFocus">Understand your focus and next step</small>
-              </span>
+            <button class="circle-action circle-action--strong" type="button" data-next="reveal" aria-label="View Precision result" data-i18n-aria="viewResultAria">
               <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" /></svg>
             </button>
           </section>
 
-          <section class="chapter" aria-labelledby="domains-title">
+          <section class="specialist-strip" aria-labelledby="domains-title">
             <div class="chapter-heading chapter-heading--inline">
-              <h2 id="domains-title" data-i18n="yourLumiere">Your Lumière</h2>
+              <h2 id="domains-title" data-i18n="yourLumiere">Your specialists</h2>
               <button class="text-action" type="button" data-toast-key="analyze" data-i18n="analyze">Analyze</button>
             </div>
-            <div class="domain-rail">
-              <button class="domain-card domain-card--skin" type="button" data-next="reveal">
-                <img src="assets/portrait-editorial.jpg" alt="" />
-                <span class="domain-card__shade" aria-hidden="true"></span>
-                <span class="domain-card__copy"><strong data-i18n="skin">Skin</strong><small data-i18n="skinState">Preview ready</small></span>
-              </button>
-              <button class="domain-card" type="button" data-toast-key="hair">
-                <img src="assets/hair-editorial.jpg" alt="" />
-                <span class="domain-card__shade" aria-hidden="true"></span>
-                <span class="domain-card__copy"><strong data-i18n="hair">Hair</strong><small data-i18n="hairState">Routine saved</small></span>
-              </button>
-              <button class="domain-card" type="button" data-toast-key="nails">
-                <img src="assets/nails-editorial.jpg" alt="" />
-                <span class="domain-card__shade" aria-hidden="true"></span>
-                <span class="domain-card__copy"><strong data-i18n="nails">Nails</strong><small data-i18n="nailsState">Explore care</small></span>
-              </button>
+            <div class="specialist-rail">
+              <button class="specialist" type="button" data-next="reveal"><img src="assets/portrait-editorial.jpg" alt="" /><span><strong data-i18n="skin">Skin</strong><small data-i18n="skinState">Result ready</small></span></button>
+              <button class="specialist" type="button" data-toast-key="hair"><img src="assets/hair-editorial.jpg" alt="" /><span><strong data-i18n="hair">Hair</strong><small data-i18n="hairState">Routine saved</small></span></button>
+              <button class="specialist" type="button" data-toast-key="nails"><img src="assets/nails-editorial.jpg" alt="" /><span><strong data-i18n="nails">Nails</strong><small data-i18n="nailsState">Explore care</small></span></button>
             </div>
           </section>
 
-          <section class="personal-thread" aria-labelledby="thread-title">
-            <div class="thread-line" aria-hidden="true"><span></span><span></span></div>
+          <section class="personal-thread personal-thread--today" aria-labelledby="thread-title">
+            <div class="thread-line" aria-hidden="true"><span></span><i></i></div>
             <div>
               <p class="micro-label" data-i18n="personalThread">Your personal thread</p>
               <h2 id="thread-title" data-i18n="baselineReady">Your first baseline is ready.</h2>
-              <p data-i18n="baselineCopy">One more comparable Skin result can begin a meaningful view over time.</p>
+              <p data-i18n="baselineCopy">Your next comparable result begins the story over time.</p>
             </div>
-            <button class="circle-action" type="button" data-toast-key="history" aria-label="Open history">
+            <button class="circle-action" type="button" data-toast-key="history" aria-label="Open history" data-i18n-aria="historyAria">
               <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" /></svg>
             </button>
           </section>
 
-          <section class="coach-invitation smoked-ink" aria-labelledby="coach-title">
-            <div class="coach-orbit" aria-hidden="true"><span></span></div>
+          <section class="coach-handoff" aria-labelledby="coach-title">
+            <div class="coach-glyph" aria-hidden="true"><span></span></div>
             <div>
               <p class="micro-label" data-i18n="coachLabel">Lumière Coach</p>
-              <h2 id="coach-title" data-i18n="coachQuestion">Would you like to make today's ritual simpler?</h2>
-              <p data-i18n="coachSource">Based on your saved routine · no new analysis</p>
+              <h2 id="coach-title" data-i18n="coachQuestion">Your next step is ready.</h2>
+              <p data-i18n="coachSource">Coach already has the context from your saved routine.</p>
             </div>
-            <button class="compact-action compact-action--dark" type="button" data-toast-key="coach">
-              <span data-i18n="askCoach">Ask Coach</span>
-              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h13M14 7l5 5-5 5" /></svg>
-            </button>
+            <button class="circle-action" type="button" data-toast-key="coach" aria-label="Ask Coach" data-i18n-aria="coachAria"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" /></svg></button>
           </section>
+          <p class="secure-review-note" data-i18n="secureReview">Secure review · fixture data only</p>
         </div>
 
         <nav class="bottom-nav pearl-glass" aria-label="Primary navigation">
@@ -196,28 +184,47 @@
             <path class="light-pass" d="M52 325C120 295 230 298 310 328" />
           </svg>
           <header class="intelligence-header">
-            <button class="icon-button icon-button--dark" type="button" data-jump="today" aria-label="Close">
+            <button class="icon-button icon-button--dark" type="button" data-jump="today" aria-label="Close" data-i18n-aria="closeAria">
               <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18" /></svg>
             </button>
             <span>Lumière Intelligence</span>
-            <span class="live-dot" aria-label="Illustrative processing"></span>
+            <span class="live-dot" aria-label="Fixture processing" data-i18n-aria="processingAria"></span>
           </header>
           <div class="intelligence-copy">
             <p class="eyebrow" data-i18n="understanding">Understanding the image</p>
             <h1 id="intelligence-title" data-i18n="bringingFocus">Bringing your<br />current picture into focus.</h1>
             <p class="phase-copy" data-i18n="phaseCopy">Reading visible cosmetic characteristics · illustrative demo only</p>
             <div class="phase-track" aria-hidden="true"><span></span></div>
-            <button class="quiet-link quiet-link--light skip-reveal" type="button" data-show-result data-i18n="skipReveal">Show result now</button>
+            <button class="quiet-link quiet-link--light skip-reveal" type="button" data-show-reveal data-i18n="skipReveal">Reveal my result</button>
+          </div>
+        </div>
+
+        <div class="signature-reveal" aria-hidden="true">
+          <img class="signature-reveal__portrait" src="assets/portrait-editorial.jpg" alt="" />
+          <div class="signature-reveal__light" aria-hidden="true"></div>
+          <header class="signature-reveal__mark">Lumière Precision</header>
+          <div class="signature-reveal__copy">
+            <p class="eyebrow" data-i18n="understood">Your beauty, understood</p>
+            <h1 data-i18n="revealHeadline">A calm,<br />balanced picture.</h1>
+            <div class="reveal-signals" aria-label="Supporting beauty signals">
+              <span><i></i><small data-i18n="texture">Texture</small><strong data-i18n="appearsBalanced">Balanced</strong></span>
+              <span><i></i><small data-i18n="tone">Tone</small><strong data-i18n="looksEven">Even</strong></span>
+              <span class="is-focus"><i></i><small data-i18n="hydration">Hydration</small><strong data-i18n="supportToday">Your focus</strong></span>
+            </div>
+            <button class="compact-action" type="button" data-show-result>
+              <span data-i18n="enterResult">See what matters today</span>
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h13M14 7l5 5-5 5" /></svg>
+            </button>
           </div>
         </div>
 
         <div class="result-stage" aria-hidden="true">
           <header class="result-header">
-            <button class="icon-button" type="button" data-jump="today" aria-label="Back to Today">
+            <button class="icon-button" type="button" data-jump="today" aria-label="Back to Today" data-i18n-aria="backAria">
               <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M19 12H6M10 7l-5 5 5 5" /></svg>
             </button>
-            <div><span data-i18n="skinResult">Skin result</span><small data-i18n="illustrative">Illustrative demo</small></div>
-            <button class="icon-button" type="button" data-toast-key="share" aria-label="Share">
+            <div><span data-i18n="skinResult">Skin result</span><small>18 Sep</small></div>
+            <button class="icon-button" type="button" data-toast-key="share" aria-label="Share" data-i18n-aria="shareAria">
               <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 16V3M7 8l5-5 5 5M5 13v8h14v-8" /></svg>
             </button>
           </header>
@@ -226,7 +233,6 @@
             <article class="current-picture">
               <div class="current-picture__image">
                 <img src="assets/portrait-editorial.jpg" alt="" />
-                <span class="fixture-badge" data-i18n="demoImage">Illustrative image</span>
               </div>
               <div class="current-picture__copy">
                 <p class="micro-label" data-i18n="currentPicture">Your current picture</p>
@@ -235,20 +241,19 @@
               </div>
             </article>
 
-            <section class="insight-composition" aria-labelledby="insights-title">
+            <section class="insight-composition signal-field" aria-labelledby="insights-title">
               <div class="chapter-heading chapter-heading--inline">
-                <div><p class="micro-label" data-i18n="atGlance">At a glance</p><h2 id="insights-title" data-i18n="keyInsights">Key insights</h2></div>
-                <button class="text-action" type="button" data-toast-key="details" data-i18n="details">Details</button>
+                <div><p class="micro-label" data-i18n="atGlance">What Lumière noticed</p><h2 id="insights-title" data-i18n="keyInsights">Three signals, one clear focus.</h2></div>
               </div>
-              <div class="insight-rail">
-                <article class="insight insight--positive"><span class="insight__mark"></span><small data-i18n="texture">Texture</small><strong data-i18n="appearsBalanced">Appears balanced</strong></article>
-                <article class="insight"><span class="insight__mark"></span><small data-i18n="tone">Tone</small><strong data-i18n="looksEven">Looks even</strong></article>
-                <article class="insight insight--focus"><span class="insight__mark"></span><small data-i18n="hydration">Hydration</small><strong data-i18n="supportToday">Support today</strong></article>
+              <div class="signal-list">
+                <article class="signal-row"><span class="signal-row__index">01</span><div><small data-i18n="texture">Texture</small><strong data-i18n="appearsBalanced">Appears balanced</strong></div><span class="signal-status signal-status--balanced" data-i18n="strongSignal">Strong</span></article>
+                <article class="signal-row"><span class="signal-row__index">02</span><div><small data-i18n="tone">Tone</small><strong data-i18n="looksEven">Looks even</strong></div><span class="signal-status" data-i18n="steadySignal">Steady</span></article>
+                <article class="signal-row signal-row--focus"><span class="signal-row__index">03</span><div><small data-i18n="hydration">Hydration</small><strong data-i18n="supportToday">Support today</strong></div><span class="signal-status signal-status--focus" data-i18n="focusSignal">Focus</span></article>
               </div>
-              <p class="evidence-note" data-i18n="noMeasurement">Qualitative prototype language · no live measurement or diagnosis</p>
+              <p class="evidence-note" data-i18n="noMeasurement">Fixture-based beauty signals · no live analysis or diagnosis</p>
             </section>
 
-            <section class="focus-panel pearl-glass" aria-labelledby="focus-title">
+            <section class="focus-panel" aria-labelledby="focus-title">
               <div class="focus-number" aria-hidden="true">01</div>
               <div>
                 <p class="micro-label" data-i18n="topFocus">Your top focus</p>
@@ -257,32 +262,35 @@
               </div>
             </section>
 
-            <section class="next-step smoked-ink" aria-labelledby="next-title">
-              <div class="next-step__light" aria-hidden="true"></div>
-              <p class="micro-label" data-i18n="nextAction">Your next action</p>
-              <h2 id="next-title" data-i18n="buildRitual">Build a gentle morning ritual with Coach.</h2>
-              <p data-i18n="storedOnly">Coach will use this stored illustrative result. It will not trigger a new analysis.</p>
-              <button class="compact-action compact-action--dark" type="button" data-toast-key="coach">
-                <span data-i18n="continueCoach">Continue with Coach</span>
-                <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h13M14 7l5 5-5 5" /></svg>
-              </button>
+            <section class="coach-continuation" aria-labelledby="next-title">
+              <div class="coach-glyph" aria-hidden="true"><span></span></div>
+              <div>
+                <p class="micro-label" data-i18n="nextAction">What you can do next</p>
+                <h2 id="next-title" data-i18n="buildRitual">Coach has your focus ready.</h2>
+                <p data-i18n="storedOnly">Continue naturally from this result—no new analysis.</p>
+              </div>
+              <button class="circle-action circle-action--strong" type="button" data-toast-key="coach" aria-label="Continue with Coach" data-i18n-aria="continueCoachAria"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" /></svg></button>
             </section>
 
-            <section class="baseline-panel" aria-labelledby="baseline-result-title">
-              <div class="baseline-visual" aria-hidden="true"><span></span><span></span><span></span></div>
-              <div>
+            <section class="progress-thread" aria-labelledby="baseline-result-title">
+              <div class="progress-thread__copy">
                 <p class="micro-label" data-i18n="progress">Progress</p>
                 <h2 id="baseline-result-title" data-i18n="baselineCreated">Baseline created</h2>
                 <p data-i18n="baselineHonest">There is no trend yet. Future comparable results can build your personal view over time.</p>
               </div>
+              <div class="progress-horizon" aria-hidden="true">
+                <span class="progress-horizon__start"><i></i><small data-i18n="todayLabel">Today</small></span>
+                <span class="progress-horizon__line"></span>
+                <span class="progress-horizon__future"><i></i><small data-i18n="nextComparable">Next comparable result</small></span>
+              </div>
+              <button class="text-action" type="button" data-toast-key="history" data-i18n="seeProgress">See your personal thread</button>
             </section>
-          </div>
 
-          <div class="result-dock pearl-glass">
-            <button class="primary-action" type="button" data-toast-key="details">
-              <span data-i18n="exploreDetails">Explore your result</span>
-              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h13M14 7l5 5-5 5" /></svg>
-            </button>
+            <section class="deeper-details" aria-labelledby="details-title">
+              <div><p class="micro-label" data-i18n="deeperLabel">When you are ready</p><h2 id="details-title" data-i18n="deeperTitle">Explore the deeper detail.</h2></div>
+              <button class="circle-action" type="button" data-toast-key="details" aria-label="Explore detailed result" data-i18n-aria="detailsAria"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" /></svg></button>
+            </section>
+            <p class="secure-review-note" data-i18n="secureReview">Secure review · fixture data only</p>
           </div>
         </div>
       </section>
@@ -291,6 +299,6 @@
     </main>
 
     <script src="assets/cache-reset.312fe609ad29.js"></script>
-    <script src="assets/app.babbed3e7cd9.js"></script>
+    <script src="assets/app.813b5de45bd7.js"></script>
   </body>
 </html>
