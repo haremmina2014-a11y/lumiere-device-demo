@@ -1,7 +1,7 @@
 {
-  "build": "ED-20260927.1",
+  "build": "NAV-20260927.1",
   "channel": "device-demo",
-  "scope": "experience-depth-pass",
+  "scope": "navigation-dashboard-reset",
   "source": "compiled-artifacts-only",
   "providerMode": "fixture-only",
   "perfectCorpEnabled": false,
