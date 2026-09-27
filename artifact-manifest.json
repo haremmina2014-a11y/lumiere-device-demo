@@ -1,5 +1,5 @@
 {
-  "build": "INTEL-20260927.1",
+  "build": "INTEL-20260927.2",
   "channel": "device-demo",
   "scope": "intelligence-outlook-perceived-value",
   "source": "compiled-artifacts-only",
