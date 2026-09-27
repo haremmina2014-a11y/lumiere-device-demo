@@ -1,7 +1,7 @@
 {
-  "build": "NAV-20260927.1",
+  "build": "INTEL-20260927.1",
   "channel": "device-demo",
-  "scope": "navigation-dashboard-reset",
+  "scope": "intelligence-outlook-perceived-value",
   "source": "compiled-artifacts-only",
   "providerMode": "fixture-only",
   "perfectCorpEnabled": false,
