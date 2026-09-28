@@ -1,5 +1,5 @@
 {
-  "build": "INTEL-20260928.3",
+  "build": "INTEL-20260928.4",
   "channel": "device-demo",
   "scope": "intelligence-outlook-history-compare",
   "source": "compiled-artifacts-only",
