@@ -1,7 +1,7 @@
 {
-  "build": "INTEL-20260928.5",
+  "build": "DEPTH-20260928.1",
   "channel": "device-demo",
-  "scope": "intelligence-outlook-history-compare",
+  "scope": "product-depth-beauty-map-compare",
   "source": "compiled-artifacts-only",
   "providerMode": "fixture-only",
   "perfectCorpEnabled": false,
@@ -10,5 +10,5 @@
   "trialUnits": 0,
   "realPurchases": false,
   "cachePolicy": "versioned-bootstrap-and-runtime-no-service-worker",
-  "generatedAt": "2026-09-28T07:20:59Z"
+  "generatedAt": "2026-09-28T08:27:45Z"
 }
