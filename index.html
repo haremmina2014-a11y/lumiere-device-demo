@@ -14,7 +14,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <meta name="apple-mobile-web-app-title" content="Lumière">
   <meta name="description" content="Lumière closed device-demo">
-  <meta name="lumiere-build" content="INTEL-20260928.4">
+  <meta name="lumiere-build" content="INTEL-20260928.5">
   <title>Lumière</title>
 </head>
 <body>
@@ -29,7 +29,7 @@
         await Promise.all(names.map((name) => caches.delete(name)));
       }
       const runtime = document.createElement('script');
-      runtime.src = 'flutter_bootstrap.js?v=INTEL-20260928.4';
+      runtime.src = 'flutter_bootstrap.js?v=INTEL-20260928.5';
       runtime.async = true;
       document.body.appendChild(runtime);
     })();
